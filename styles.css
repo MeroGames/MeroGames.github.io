@@ -1,0 +1,86 @@
+/* Basic layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0f0f14;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #e6e6f0;
+}
+
+#game-root {
+  position: relative;
+  width: 1280px;
+  margin: 16px auto;
+}
+
+#game {
+  display: block;
+  width: 1280px;
+  height: 720px;
+  background: linear-gradient(#233047, #1b2435);
+  border: 2px solid #2f3c56;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+#hud {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(8, 10, 16, 0.55);
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  backdrop-filter: blur(3px);
+}
+
+.gold {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.build-btn, #cancel-build, #music-toggle {
+  background: #2a3957;
+  color: #f2f6ff;
+  border: 1px solid #3e527a;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.build-btn.active {
+  outline: 2px solid #8ab4ff;
+}
+
+.build-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.hints {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.audio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vol {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
